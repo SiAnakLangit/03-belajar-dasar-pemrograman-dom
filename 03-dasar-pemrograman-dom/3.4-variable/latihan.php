@@ -1,6 +1,15 @@
 <?php
-$nama = "Buku";
-$harga = 12000;
+
+$nama = "Notebook";
+$harga = 14000;
 $jumlah = 2;
-$total = $harga * $jumlah;
-echo $nama . ": " . $total . PHP_EOL;
+$ongkos = 3500;
+
+$totalBarang = $harga * $jumlah;
+$totalAkhir = $totalBarang + $ongkos;
+
+echo "Nama       : " . $nama . PHP_EOL;
+echo "Harga      : Rp" . $harga . PHP_EOL;
+echo "Jumlah     : " . $jumlah . PHP_EOL;
+echo "Ongkos     : Rp" . $ongkos . PHP_EOL;
+echo "Total      : Rp" . $totalAkhir . PHP_EOL;

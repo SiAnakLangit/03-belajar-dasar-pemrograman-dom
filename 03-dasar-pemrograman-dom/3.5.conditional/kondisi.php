@@ -1,9 +1,13 @@
 <?php
-$nilai = 75;
+
+$nilai = 94;
+
 if ($nilai < 0 || $nilai > 100) {
-    echo "Tidak valid";
+    echo "Tidak valid" . PHP_EOL;
+} elseif ($nilai >= 90) {
+    echo "Sangat baik" . PHP_EOL;
 } elseif ($nilai >= 75) {
-    echo "Lulus";
+    echo "Lulus" . PHP_EOL;
 } else {
-    echo "Belajar lagi";
+    echo "Belajar lagi" . PHP_EOL;
 }
